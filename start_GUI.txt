@@ -1,0 +1,110 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+
+class StartScreen(tk.Frame):
+    def __init__(self, master, start_quiz_callback):
+        super().__init__(master, bg="#5a4e8b")  # dark purple background
+        self.master = master
+        self.start_quiz_callback = start_quiz_callback
+
+        tk.Label(self, text="Fear Quiz 👾", font=("Arial", 24, "bold"), fg="#c3bfff", bg="#5a4e8b").pack(pady=(20, 5))
+        tk.Label(self, text="In this quiz, you'll be shown the name of a phobia and must choose\n"
+                            "the correct answer from the given options. Each correct answer earns\n"
+                            "points, but using hints will reduce your final score. Your goal is to get\n"
+                            "the highest score possible. Ready to test your phobia knowledge?",
+                 font=("Arial", 12), fg="white", bg="#5a4e8b", justify="center").pack(pady=(0, 20))
+
+        self.warning_label = tk.Label(self, text="", font=("Arial", 12, "bold"), fg="yellow", bg="#5a4e8b")
+        self.warning_label.pack()
+
+        # Entry for number of questions
+        self.num_questions_entry = tk.Entry(self, font=("Arial", 14), justify="center")
+        self.num_questions_entry.insert(0, "Choose the number of questions")
+        self.num_questions_entry.pack(pady=10)
+
+        # Dropdown for difficulty
+        self.difficulty = tk.StringVar()
+        self.difficulty.set("Levels")
+        level_menu = ttk.Combobox(self, textvariable=self.difficulty, values=["Easy", "Hard"], state="readonly")
+        level_menu.pack()
+
+        # Start Button
+        tk.Button(self, text="Start!", font=("Arial", 16, "bold"), bg="#b3a6f2", command=self.validate_input).pack(pady=20)
+
+    def validate_input(self):
+        try:
+            num = int(self.num_questions_entry.get())
+            if num <= 0:
+                raise ValueError
+            level = self.difficulty.get()
+            if level not in ["Easy", "Hard"]:
+                raise ValueError
+            self.start_quiz_callback(num, level)
+        except ValueError:
+            self.warning_label.config(text="⚠️ Oops - Please choose a whole number more than zero")
+
+class QuizScreen(tk.Frame):
+    def __init__(self, master):
+        super().__init__(master, bg="#5a4e8b")
+        self.master = master
+
+        self.round_label = tk.Label(self, text="Round #", font=("Arial", 20, "bold"), fg="white", bg="#5a4e8b")
+        self.round_label.pack(pady=10)
+
+        self.question_label = tk.Label(self, text="What is Arachnophobia?", font=("Arial", 18), fg="white", bg="#5a4e8b")
+        self.question_label.pack(pady=10)
+
+        self.options_frame = tk.Frame(self, bg="#5a4e8b")
+        self.options_frame.pack(pady=10)
+
+        self.selected_option = tk.StringVar()
+
+        self.buttons = []
+        options = [("🕷 Spider", "Spider"), ("🦇 Bats", "Bats"), ("🌊 Water", "Water"), ("⚡ Thunder", "Thunder")]
+        for text, value in options:
+            btn = tk.Radiobutton(self.options_frame, text=text, variable=self.selected_option, value=value,
+                                 font=("Arial", 14), indicatoron=False, width=20,
+                                 bg="#a79fe7", fg="black", selectcolor="#d9d6f5", relief="ridge")
+            btn.pack(pady=5)
+            self.buttons.append(btn)
+
+        # Submit button
+        tk.Button(self, text="Submit Answer", bg="green", fg="white", font=("Arial", 14), command=self.submit).pack(pady=10)
+
+        # Bottom buttons
+        bottom_frame = tk.Frame(self, bg="#5a4e8b")
+        bottom_frame.pack(pady=10)
+
+        tk.Button(bottom_frame, text="End Game", bg="darkred", fg="white", font=("Arial", 12), command=self.master.quit).grid(row=0, column=0, padx=5)
+        tk.Button(bottom_frame, text="Next question", bg="#9189d9", fg="white", font=("Arial", 12)).grid(row=0, column=1, padx=5)
+        tk.Button(bottom_frame, text="Hint", bg="#f4a261", fg="white", font=("Arial", 12)).grid(row=0, column=2, padx=5)
+        tk.Button(bottom_frame, text="Stats", bg="#d6c9f9", fg="black", font=("Arial", 12)).grid(row=0, column=3, padx=5)
+
+    def submit(self):
+        selected = self.selected_option.get()
+        if not selected:
+            messagebox.showinfo("Warning", "Please select an answer before submitting.")
+        else:
+            messagebox.showinfo("Answer", f"You selected: {selected}")
+
+
+class FearQuizApp(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("Fear Quiz")
+        self.geometry("600x500")
+        self.resizable(False, False)
+
+        self.start_screen = StartScreen(self, self.start_quiz)
+        self.quiz_screen = QuizScreen(self)
+
+        self.start_screen.pack(fill="both", expand=True)
+
+    def start_quiz(self, num_questions, difficulty):
+        self.start_screen.pack_forget()
+        self.quiz_screen.pack(fill="both", expand=True)
+
+
+if __name__ == "__main__":
+    app = FearQuizApp()
+    app.mainloop()
