@@ -44,6 +44,7 @@ def generate_options(correct_answer, all_questions):
     return options[:4]
 
 # --- Global Variables ---
+current_theme = "dark"  # Default theme
 score = 0
 hints_used = 0
 current_question = ""
@@ -83,6 +84,9 @@ def start_quiz():
 def next_question():
     global current_question, current_correct_answer, round_number
     
+    # Show theme toggle button during quiz
+    theme_button.pack(side="right", padx=5)
+
     question_pool = questions_easy if level == "Easy" else questions_hard
     remaining_questions = list(set(question_pool.keys()) - set(asked_questions))
 
@@ -141,6 +145,9 @@ def check_answer(selected_index):
                 btn.config(bg="#2ECC71")
         result = "Incorrect"
     
+    # Hide theme toggle button at end of quiz
+    theme_button.pack_forget()
+
     # Add to stats
     stats_list.append({
         "Round": round_number,
@@ -293,6 +300,36 @@ def restart_quiz():
     level_dropdown.set("Easy")
     error_label.config(text="")
 
+def toggle_theme():
+    """Toggle between light and dark themes"""
+    global current_theme
+    
+    if current_theme == "dark":
+        # Switch to light theme
+        current_theme = "light"
+        root.config(bg="#F5F5F5")
+        quiz_frame.config(bg="#F5F5F5")
+        question_label.config(bg="#F5F5F5", fg="#333333")
+        round_label.config(bg="#F5F5F5", fg="#5A4E8D")
+        feedback_label.config(bg="#F5F5F5")
+        answer_frame.config(bg="#F5F5F5")
+        control_frame.config(bg="#F5F5F5")
+        top_bar.config(bg="#F5F5F5")
+        theme_button.config(text="🌙 Dark Mode")
+        
+    else:
+        # Switch to dark theme
+        current_theme = "dark"
+        root.config(bg="#5a4e8d")
+        quiz_frame.config(bg="#5a4e8d")
+        question_label.config(bg="#5a4e8d", fg="#FFFFFF")
+        round_label.config(bg="#5a4e8d", fg="lavender")
+        feedback_label.config(bg="#5a4e8d")
+        answer_frame.config(bg="#5a4e8d")
+        control_frame.config(bg="#5a4e8d")
+        top_bar.config(bg="#5a4e8d")
+        theme_button.config(text="☀️ Light Mode")
+
 # --- GUI Setup ---
 root = tk.Tk()
 root.title("Fear Quiz 👻")
@@ -307,10 +344,11 @@ start_frame.pack(fill="both", expand=True)
 tk.Label(start_frame, text="Fear Quiz 👾", font=("Helvetica", 28, "bold"), 
          fg="lavender", bg="#5a4e8d").pack(pady=20)
 
-intro_text = ("In this quiz, you'll be shown the name of a phobia and must choose the correct answer from the given options.\n"
+intro_text = ("In this quiz, you'll be shown the name of a phobia\n"
+              "and must choose the correct answer from the given options.\n"
              "Each correct answer earns 10 points, but wrong answers cost 5 points.\n"
              "Using hints will reduce your score by 2 points but eliminate one wrong answer.\n"
-             "Your goal is to get the highest score possible. Ready to test your phobia knowledge? 🧠")
+             "Your goal is to get the highest score possible. Ready to test your phobia knowledge?")
 
 tk.Label(start_frame, text=intro_text, font=("Helvetica", 11), fg="white", bg="#5a4e8d", 
          justify="left", wraplength=600).pack(pady=20)
@@ -325,7 +363,6 @@ input_frame.pack(pady=20)
 tk.Label(input_frame, text="Number of Questions:", font=("Helvetica", 12), 
          fg="white", bg="#5a4e8d").pack()
 num_questions_entry = tk.Entry(input_frame, font=("Helvetica", 14), justify="center", width=10)
-num_questions_entry.insert(0, "5")
 num_questions_entry.pack(pady=5)
 
 tk.Label(input_frame, text="Difficulty Level:", font=("Helvetica", 12), 
@@ -341,9 +378,18 @@ tk.Button(start_frame, text="🚀 Start Quiz!", font=("Helvetica", 16, "bold"),
 # --- Quiz Frame ---
 quiz_frame = tk.Frame(root, bg="#5a4e8d")
 
-round_label = tk.Label(quiz_frame, text="Round #", font=("Helvetica", 20, "bold"), 
+# Top bar for quiz frame with round label and theme toggle (MOVED HERE - AFTER quiz_frame is defined)
+top_bar = tk.Frame(quiz_frame, bg="#5a4e8d")
+top_bar.pack(fill="x", pady=10)
+
+round_label = tk.Label(top_bar, text="Round #", font=("Helvetica", 20, "bold"), 
                       fg="lavender", bg="#5a4e8d")
-round_label.pack(pady=10)
+round_label.pack(side="left", padx=20)
+
+# Theme toggle button (only shown during quiz)
+theme_button = tk.Button(top_bar, text="☀️ Light Mode", font=("Helvetica", 10, "bold"),
+                       bg="#5a4e8d", fg="white", command=toggle_theme)
+# Note: We don't pack it here, it will be packed when the quiz starts
 
 question_label = tk.Label(quiz_frame, text="", font=("Helvetica", 16, "bold"), 
                          fg="white", bg="#5a4e8d", wraplength=600)
@@ -374,7 +420,7 @@ hint_button = tk.Button(control_frame, text="💡 Hint", font=("Helvetica", 12, 
 hint_button.pack(side="left", padx=5)
 
 next_button = tk.Button(control_frame, text="➡️ Next", font=("Helvetica", 12, "bold"),
-                       bg="#9B59B6", fg="white", command=next_question, state="disabled")
+                       bg="#5A4E8D", fg="white", command=next_question, state="disabled")
 next_button.pack(side="left", padx=5)
 
 stats_button = tk.Button(control_frame, text="📊 Stats", font=("Helvetica", 12, "bold"),
@@ -384,7 +430,6 @@ stats_button.pack(side="left", padx=5)
 end_quiz_button = tk.Button(control_frame, text="🛑 End Quiz", font=("Helvetica", 12, "bold"),
                            bg="#B51F0E", fg="white", command=end_game)
 end_quiz_button.pack(side="left", padx=5)
-
 
 # --- End Frame ---
 end_frame = tk.Frame(root, bg="#5a4e8d")

@@ -1,0 +1,350 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3" pages="6">
+  <diagram name="Start_Quiz_GUI" id="czBHK0pEtEMC525se3ba">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dCfORFxPa794DJb1Z0bH-11" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-68" y="-62" width="401" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="308" y="-57" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fear Quiz&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="-22" width="121" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;👾&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="34" y="-18" width="71" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-6" value="&lt;span data-teams=&quot;true&quot;&gt;&amp;nbsp;In this quiz, you&#39;ll be shown the name of a phobia and must choose the correct answer from the given options. Each correct answer earns points, but using hints will reduce your final score. Your goal is to get the highest score possible. Ready to test your phobia knowledge?&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-64" y="16" width="379" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-7" value="Start!" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="6" y="202" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WdGou3GYrItKtmi08Nk3-8" value="&lt;b&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Levels&lt;/font&gt;&lt;/b&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=none;fillColor=#9090D6;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="183" y="122" width="125" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ow-3PomSDT8QAQbUH4BY-1" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Choose the number of questions&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9090D6;" vertex="1" parent="1">
+          <mxGeometry x="-21" y="122" width="204" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ow-3PomSDT8QAQbUH4BY-3" value="&lt;font style=&quot;font-size: 14px; color: rgb(144, 144, 214);&quot;&gt;&lt;b style=&quot;&quot;&gt;Easy&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="183" y="145.5" width="95" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ow-3PomSDT8QAQbUH4BY-4" value="&lt;font style=&quot;font-size: 14px; color: rgb(144, 144, 214);&quot;&gt;&lt;b style=&quot;&quot;&gt;Medium&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="183" y="169.5" width="95" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ow-3PomSDT8QAQbUH4BY-5" value="&lt;font style=&quot;font-size: 14px; color: rgb(144, 144, 214);&quot;&gt;&lt;b style=&quot;&quot;&gt;Hard&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="183" y="193.5" width="95" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="9I1kRrAbfOb8uo-fKyTi-1" value="&lt;font style=&quot;font-size: 14px; color: rgb(63, 59, 99);&quot;&gt;😬 Oops - Please choose a whole number more than zero&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="84" width="397" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="373" y="-69" width="401" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="749" y="-64" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fear Quiz&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-29" width="121" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;👾&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="475" y="-25" width="71" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-5" value="&lt;span data-teams=&quot;true&quot;&gt;&amp;nbsp;In this quiz, you&#39;ll be shown the name of a phobia and must choose the correct answer from the given options. Each correct answer earns points, but using hints will reduce your final score. Your goal is to get the highest score possible. Ready to test your phobia knowledge?&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="377" y="9" width="379" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-6" value="Start!" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="447" y="195" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-7" value="&lt;b&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Levels&lt;/font&gt;&lt;/b&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#9090D6;fillColor=#9090D6;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="624" y="115" width="125" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-8" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Choose the number of questions&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9090D6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="115" width="204" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-12" value="&lt;font style=&quot;color: rgb(255, 255, 102); font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;⚠&lt;/b&gt; &lt;/font&gt;&lt;font style=&quot;font-size: 14px; color: rgb(255, 255, 102);&quot;&gt;Oops - Please choose a whole number more than zero&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="372" y="77" width="397" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-15" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Easy&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#56517E;strokeColor=#9090D6;align=left;" vertex="1" parent="1">
+          <mxGeometry x="624" y="138.5" width="98" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sSY7VMm8KNZtT5orSZ-7-17" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Hard&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#56517E;strokeColor=#9090D6;align=left;" vertex="1" parent="1">
+          <mxGeometry x="624" y="162" width="98" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-67" y="319" width="383" height="391" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="291" y="324" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fear Quiz&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="359" width="121" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;👾&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="35" y="363" width="71" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-6" value="Start!" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-3" y="617" width="173" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-7" value="&lt;b&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Levels&lt;/font&gt;&lt;/b&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#9090D6;fillColor=#9090D6;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="174" y="539" width="125" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-8" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 14px;&quot;&gt;Choose the number of questions&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9090D6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-30" y="539" width="204" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-9" value="&lt;font style=&quot;color: rgb(255, 255, 102); font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;⚠&lt;/b&gt; &lt;/font&gt;&lt;font style=&quot;font-size: 14px; color: rgb(255, 255, 102);&quot;&gt;Oops - Please choose a whole number more than zero&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-67" y="499.5" width="397" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-10" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Easy&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#56517E;strokeColor=#9090D6;align=left;" vertex="1" parent="1">
+          <mxGeometry x="174" y="562.5" width="98" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-11" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Hard&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#56517E;strokeColor=#9090D6;align=left;" vertex="1" parent="1">
+          <mxGeometry x="174" y="586" width="98" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-16" value="&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ol&gt;&lt;li&gt;You will be shown the name of a phobia.&lt;/li&gt;&lt;li&gt;Choose the number of questions.&lt;/li&gt;&lt;li&gt;Choose the correct answer from the given options.&lt;/li&gt;&lt;li&gt;Earn points for each correct answer!&lt;/li&gt;&lt;li&gt;Use hints if you need help, but they will reduce your final score.&lt;/li&gt;&lt;li&gt;Try to get the highest score possible!&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="405" width="378" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="SSRdV19OnOp-c-u9HPr0-17" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;How to play&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="391" width="77" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Quiz_Interface_1" id="O-1xNuhUfzYA4l_tJyD5">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-0" />
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-1" parent="cHjbZ517iVMDtQBzXqAj-0" />
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-2" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-68" y="-62" width="401" height="412" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="308" y="-57" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Round #&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-61" y="-22" width="101" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-5" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;What is Arachnophobia?&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-64" y="16" width="379" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-6" value="🕷Spider" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-24.5" y="60" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-7" value="&amp;nbsp;🌊 Water" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-20" y="130" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-8" value="Thunder⚡" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="140" y="130" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-9" value="Bats🦇" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="140" y="60" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-10" value="Submit Answer" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#00994D;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="-10" y="200" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-11" value="Stats" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#E1D5E7;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="150" y="300" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-12" value="End Game" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#990000;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="10" y="250" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-13" value="Hint" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#F4A261;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="10" y="300" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cHjbZ517iVMDtQBzXqAj-14" value="Next question" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#3E3A5C;whiteSpace=wrap;" parent="cHjbZ517iVMDtQBzXqAj-1" vertex="1">
+          <mxGeometry x="150" y="250" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XhY5RsJXXuKyDrDivrF9" name="Quiz_Interface_2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-68" y="-62" width="401" height="432" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="308" y="-57" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Round #&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="-22" width="101" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-5" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;What is Arachnophobia?&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="10" width="379" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-6" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;🕷Spider&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-24.5" y="44" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-13" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;&amp;nbsp;🌊 Water&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-24.5" y="110" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-14" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Thunder⚡&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-15" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Bats🦇&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="140" y="44" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="veSdPIRlq6EuTVQbMa8G-17" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Submit Answer&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#00994D;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="230" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7K82UwrlVMmsHPlUprSk-1" value="Stats" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#E1D5E7;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="150" y="320" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K-eGanvAIKeSLHa9_6_L-1" value="End Game" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#990000;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="270" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K-eGanvAIKeSLHa9_6_L-2" value="Hint" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#F4A261;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="320" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K-eGanvAIKeSLHa9_6_L-3" value="Next question" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#3E3A5C;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="150" y="270" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fRJtdoF1g3gkbMCq4ttk-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Correct! You chose [answer]. your score is {score}.&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 15px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;well done!&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#66FFB3;" vertex="1" parent="1">
+          <mxGeometry x="-1" y="170" width="310" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QFmcyVpSKlpCkoR_sX-N" name="Quiz_Interface_3">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="414" y="440" width="401" height="412" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="790" y="445" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Round #&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="421" y="480" width="101" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-4" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;What is Arachnophobia?&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="418" y="518" width="379" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-5" value="🕷Spider" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="457.5" y="562" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-6" value="&amp;nbsp;🌊 Water" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="462" y="632" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-7" value="Thunder⚡" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="622" y="632" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-8" value="Bats🦇" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="622" y="562" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-9" value="Submit Answer" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#00994D;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="472" y="702" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-10" value="Stats" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#E1D5E7;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="632" y="802" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-11" value="End Game" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#990000;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="492" y="752" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-12" value="Hint" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#F4A261;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="492" y="802" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F_IDn8Nrmy0a7adzeBMU-13" value="Next question" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#3E3A5C;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="632" y="752" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="430" width="401" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="336" y="435" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Round #&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-33" y="470" width="101" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-4" value="&lt;span data-teams=&quot;true&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;What is Arachnophobia?&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-33" y="500" width="379" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-5" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;🕷Spider&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="3.5" y="524" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-6" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;&amp;nbsp;🌊 Water&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="3.5" y="585" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-7" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Thunder⚡&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="168" y="585" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-8" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Bats🦇&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="168" y="524" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-9" value="&lt;font style=&quot;font-size: 20px; color: rgb(255, 255, 255);&quot;&gt;Quiz Over&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#CC0000;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="6.5" y="702" width="300" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-10" value="Stats" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#E1D5E7;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="760" width="136.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-12" value="Hint" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=none;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#F4A261;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="6.5" y="760" width="143.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-14" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Incorrect. The correct answer was [correct option]. your score is {score}.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="3.5" y="640" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qXGuySb5MzIODRmGRS62-15" value="&lt;div&gt;&lt;font style=&quot;font-size: 20px; color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 20px; color: rgb(255, 255, 255);&quot;&gt;Play Again&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#00994D;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="3.5" y="820" width="300" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ELWL_qo4B8Il0LKphyTv-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAFNdJREFUeF7tnQnsZlV5xp+nxraa2Fpba7Qh1i6atqRLakoXTZs2tWmNmNrN2JguSpumcQklVhEQGJFhWAbZQXZm2GYIIDJShmEsDmIBCwpSVlmGZUAQhkV2b7+33MlQMsx37/fde79zzv2dhAD5n3vO+/7ec5/v3nvOeY9FgQAERkvAo/UcxyEAASEADAIIjJgAAjDi4OM6BBAAxgAERkwAARhx8HEdAggAYwACIyaAAIw4+LgOAQSAMQCBERNAAEYcfFyHAALAGIDAiAkgACMOPq5DAAFgDEBgxAQQgBEHH9chgAAwBiAwYgIIwIiDj+sQQAAYAxAYMQEEYMTBx3UIIACMAQiMmAACMOLg4zoEEADGAARGTAABeEnwq6p6g6S3SfpVSb8uaUdJr5ZUSXqlpIckPSjpMUl3S7pD0m2Sbrf9nRGPJVzPkMDoBaCqqri5f1bS70r6PUk/X///Di3ieZeke2pBuF7SOkkbJW2y/UyLdqgKgUEJjFYAqqp6raT3SPoHSX8gdZ4g9RFJaySdYPvSQaNKZxBoSGB0AlBV1Zsl/cvkUf4j9aN9Q1RzVQsBWGp77VytcDEEOiYwGgGoqioe6T8q6QOS3tQxxybNPSEphGBvSd+0/XyTi6gDgT4JFC8AVVW9qr7pPyHprX3CbNj2o5KOlXSU7fiASIHAwggULQD1r37cbH+6MMIv33HMIhwq6UDb8d8UCAxOoFgBqKoqPvDFzf/Gwam26/AWScfEP7a/3+5SakNgPgLFCUBVVeHT39c31Q/Ph2ewq38gaYOkQyRdYju+F1Ag0DuBEgXg3yZf95dJ+qHe6fXTwXpJu9q+tp/maRUCWwkUIwBVVcUNv6+kT0p6ReZBfk7SKkmH2f565r5gfsIEihCA+ubfVdIBGf/yb2uYPCxphaSDbd+Z8DjCtEwJlCIA759M8Z3ew2q+VMK6SdLnJR1te3MqRmFH/gSyF4Cqqnaql9y+Lv9wTPUgngiW1DMGT06tTQUITCGQtQBUVfWjkq6evC//yogiHTMGN9YzBqtsx8IiCgRmIpC7AHysXkwzk/MFXPRlScslrbcdHw4pEGhFIFsBqKrqJyXdJCn+PfZyoaRP2/7m2EHgfzsCOQtAfBSLzT2UFwjE4qEL4tXA9lVAgUATAlkKQFVVvyPpfEmvb+LkyOo8UC+BPpHNRiOL/Azu5ioAscb/n2bwd0yXxLqBWFp8JFuPxxT2dr5mJwD1Dr9vTxbHvKadq6OtHVuOY4FUZCZ6drQUcHybBHIUgJgH34N4tiIQU4fXSdqz3mzEGoJW+MqtnJUA1Mk94tf/LeWGpFfPQghij8Fy2//Va080ngWB3AQgMvrE1B9lPgIhBLF0el/bkY+AMlICuQlAZPA9caSx6sPt79VPBIfajtWFlJERyE0A+PrfzwCNA00Ol3SW7fv66YJWUySQjQBUVfVzk3f/UyYfsd6RIshCbIrXq/jIeobteE2gFE4gJwGIxT8r+QA4yIi8pl5DsNJ2HIlGKZRATgLw55Nz+lYXlvAj5WEVR5rFOQbxRHA1R5ylHKrZbctJAD4s6Quzu8qVMxKITMVnS/ocMwYzEkz4spwEII7yOixhlqWbFicZnSxpL9v3lu7sWPzLSQAi59/BYwlMwn7G1OFxdXqyOBWZkjEBBCDj4C3Y9Mg9cGS8HpCncMGRmKP7nAQg9v5HDgBKWgRujmQkks5hxiCtwDSxBgFoQok60wjEmoE4v2CZ7cjTQMmEAAKQSaAyMTNmDM6L7wMhCOQpTD9qCED6McrRwjjtODYbLbF9T44OjMVmBGAskV6Mn49LOl7SUtv3L8YEet0eAQSA8TEEgbj5l9Z7DBCCIYg37AMBaAiKap0Q+EY9k3M6eQo74Tl3IwjA3AhpYAYCsYZgN9uXzHAtl3RIAAHoECZNtSKwZbPR/pIu54mgFbvOKiMAnaGkoRkJxIGnZ8ZGL9uxDZkyIAEEYEDYdLVdAiEEx9SLiR6B1TAEEIBhONNLcwIPSjpK0kG2Yz0BpUcCCECPcGl6LgJxjsFBktbYDlGg9EAAAegBKk12RiD2GGyoVxQyY9AZ1q0NIQA9QKXJXgh8RdLutq/opfWRNooAjDTwmbodWYnWRHoySVeSuXj+KCIA8zOkheEJxBHokSH6CNtxpgFlRgIIwIzguCwJAjFdGE8DcQR6bEWmtCSAALQERvUkCcRpRpEtKhYTRc5CSkMCCEBDUFTLgkDMGBwh6ULbsRWZMoUAAsAQKY1AfCi8qH41uII8hdsPLwJQ2vDHny0EQggurM8xiN2HlG0QQAAYFqUTeLI+0ORY2wjBS6KNAJQ+/PFvC4GNkk6tNxs9CpYXCCAAjISxEdgUrwXxVGD72bE5/1J/EYCxj4Dx+n+bpEhGEicbjXbXIQIw3hsAz6X4UHhxvf34ojGeY4AAcBtA4AUCZ0xeifexfdOYgCAAY4o2vk4j8LSkc2shuHFa5RL+jgCUEEV86JrAdyWdIOkk23H4abEFASg2tDjWAYG4+ZeHGJQ6Y4AAdDBKaKJ4ArHleImkU0pbWowAFD92cbBDApG2fF9J/2E7VhhmXxCA7EOIAwMTiBt/bZ2wNA40ibyF2RYEINvQYfiCCVSSVtQzBrGoKMuCAGQZNoxOiEBMHZ4k6WDbtyZkVyNTEIBGmKgEgakE4uY/uZ46vHdq7UQqIACJBAIziiFwraQDJJ1n+6nUvUIAUo8Q9uVK4FuSPmt7VcoOIAApRwfbcicQMwTr6oSlsdkoNh8lVRCApMKBMYUSiAQkX5K0Z2rnGCAAhY443EqSQCQgOb5+NUjiQyECkOQ4wajCCTxTLyQ62vbdi/QVAVgkffoeO4E4Aj12HUZ6ss2LgIEALII6fULg/xP4Rr3ZaM3Quw4RAIYiBNIhcLWkT9heP5RJCMBQpOkHAs0IPFF/H4hkJHc2u2T2WgjA7Oy4EgJ9EojchEv7zkGAAPQZQtqGwPwELrC98/zNbLsFBKAvsrQLge4IXCLpY7Zv6K7JF1pCALomSnsQ6IdAZCn+iO0Qg84KAtAZShqCQO8E4gSjP7O9oaueEICuSNIOBIYhEAlK32v7+i66QwC6oEgbEBiWQKwT+CvbD83bLQIwL0Guh8BiCKyw/cF5u0YA5iXI9RBYHIEP2T5xnu4RgHnocS0EFkvgfknvsh3Zh2YqCMBM2LgIAskQOEXSP9uO7MStCwLQGhkXQCApAs9J+qDtM2exCgGYhRrXQCAtArdLetssW4kRgLQCiTUQmJXALrYj3VirggC0wkVlCCRL4BZJO9qOdGONCwLQGBUVIZA8gXfYvryNlQhAG1rUhUDaBPawvV8bExGANrSoC4G0CcQhJB+w/UBTMxGApqSoB4H0CURm4b+wHULQqCAAjTBRCQLZEIjEIYc1tRYBaEqKehDIg8DxtndpaioC0JQU9SCQB4HLJmnFf7+pqQhAU1LUg0AeBCJv4G/afqqJuQhAE0rUgUA+BCJj0DttNzp8FAHIJ7BYCoEmBDbWKcOuaVIZAWhCiToQyIfApjp78OomJiMATShRBwL5ELhP0iclnWa7mmY2AjCNEH+HQF4E4t1/N9tnNDEbAWhCiToQyIfA3ZIiV+DFTUxGAJpQog4E8iEQswB/YvvWJiYjAE0oUQcC+RCIU4V/2/YjTUxGAJpQog4E8iFwraS3236+ickIQBNK1IFAPgTW2/7DpuYiAE1JUQ8CeRA43PZHm5qKADQlRT0I5EHg72yf2tRUBKApKepBIH0Cd0ja2fZ1TU1FAJqSoh4E0iewUlKkB3+yqakIQFNS1INA+gT+2vaqNmYiAG1oURcC6RKIswF3sP3dNiYiAG1oURcC6RJolQpsixsIQLoBxTIINCXwWL345+amFyAAbUlRHwLpEjjX9vtmMY8ngFmocQ0E0iHwUD3197VZTEIAZqHGNRBIh8A+tvee1RwEYFZyXAeBxROIvH/vth1ZgGYqCMBM2LgIAgsnEOm+drJ91TyWIADz0ONaCCyOwL/bXjZv9wjAvAS5HgLDE1hie68uukUAuqBIGxAYjkAc/Llr04Qf08xCAKYR4u8QSIfA6bb/tktzEIAuadIWBPojcFR94McPuuwCAeiSJm1BoB8C8bFvT9vPdN08AtA1UdqDQLcEPmV7abdNbm0NAeiLLO1CYD4CGyR9epLg87L5mtn+1QhAn3RpGwLtCdwvaXdJ59je3P7ydlcgAO14URsCfRF4TtLa+le/0dHeXRiCAHRBkTYgMB+BdZL2sP31+ZppfzUC0J4ZV0CgKwJflXSMpFW2n+2q0TbtIABtaFEXAt0QiD38n5F0dtscft10v7UVBKBrorQHgZcnEKm7lks60PbjKYBCAFKIAjaUTiC+7MdpPfvbfjglZxGAlKKBLaUReErSWZKOsn1lis4hAClGBZtyJxDr9dfXv/jxhT/ZggAkGxoMy5TAFRO7I0ffWtuRtSfpggAkHR6My4hApOY6WlKk6H4kF7sRgFwihZ2pEnhQ0hGSjrW9KVUjX84uBCC3iGFvKgRia27s0Y/0XN9Lxai2diAAbYlRf+wEYhrv7JjPt31T7jAQgNwjiP1DEdiyWWfJJBf/Vbbj/7MvCED2IcSBAQjEJp1YxPPFAfoatAsEYFDcdJYZgfiyv5/t8zOzu7G5CEBjVFQcEYFb6w98Z85z7FYOvBCAHKKEjUMRiK/5p0laZvveoTpdZD8IwCLp03cqBGLpbkzpLbV9TypGDWEHAjAEZfpIlUBs1lkt6chFZONJAQoCkEIUsGFoAjGFF7vz9pO0zvbTQxuQSn8IQCqRwI6hCNwYiTfrNfvJb9bpGwoC0Ddh2k+FwA2SDpd0fCmLeLoAiwB0QZE2UibwgKTPS1ph+66UDV2EbQjAIqjT5xAEnpB0ev1l/ztDdJhjHwhAjlHD5u0RiF16Z0j6nO2bQbV9AggAI6QkAufWj/uX857fLKwIQDNO1EqXQHzJv17SIfUBG/HoT2lIAAFoCIpqSRLYKGkvSafkkH8vRYIIQIpRwaZpBOKjXuTfOzHnbDzTnBzi7wjAEJTpoysCcZrOinjct31LV42OuR0EYMzRz8f32KwTB2zEl/1436d0RAAB6AgkzfRCINbsRxaevW1f10sPI28UARj5AEjU/bjxL4tFPJJiSu/7idqZvVkIQPYhLM6BeLePpbuRZ7+IxJspRwgBSDk647ItDtVYFl/3bcc+fcoABBCAASDTxXYJxFz+F+L4bNt3wmpYAgjAsLzpbSuBOD/vPEkH2f42YBZDAAFYDPex97o2knLYjrTblAUSQAAWCH+EXV8s6QDbl47Q9yRdRgCSDEtRRsUinjhDL9bsX2Q7VvNREiGAACQSiELNiBTbcXT2UbYfLdTHrN1CALIOX7LGP1jn2T+QX/xkY/R/hiEAaccnN+vixj81pvVsR/ZdSuIEEIDEA5SJeU9K+rKk5bY3ZGIzZvIEwBjogEAcnb277fUdtEUTAxPgCWBg4AV1Fzf8wZIutv1sQX6NypWcBGAXSceNKjppOnubpEMlrbT9cJomYlVTAjkJwPvrdM9NfaNetwQeq2/8eM/nxu+W7cJay0kAdpZ0/sJIjbfjWLN/TL1m/6HxYijT85wE4O31l+afKjMUyXkVC3fOkbS/pFvJuptcfDoxKCcB+BlJJ00yxPxxJ57TyMsRiCQcccDGcbYvAVPZBHISgFdJOlDSv5YdkoV6d7Wkj9u+fKFW0PlgBLIRgCBSVRUzAf0Mjf+us/FcyNLdfgCn2mpuAvAbkmKwUrohcHucqlM/7t/XTZO0khOB3ATg1ZJi0P50TpATtDWW7h4Z03q2Y8ceZaQEshKA+jXgTEl/M9J4zev20/Viqrjx43gtysgJ5CgA75K0RtIrRh67Nu5Hlt3/lLRnvELZfr7NxdQtl0COAhA3fuSOf0u5YenUsysjDVdM7TGX3ynXIhrLTgDq14DPRlLJIiLQnxM3TCZOPmN7dX9d0HLuBHIVgF+uXwPenHsAerD/f2JfvqTVrNnvgW5hTWYpAPVTwKfitNjC4jGPO3GyzsrIwWf7jnka4trxEMhZAGJl4BWTd9tfG0+4tulpZN09uX7cv3vkLHC/JYFsBaB+Cvit+hTZH2npdwnVK0mnRVIO298qwSF8GJ5A1gJQi0C87358eHQL6zHm8r9WZ+NZa/uZhVlCx9kTKEEA4tc/jpp6Z/bRmO5ALN6JAzbOJg3XdFjUmE4gewGonwJiq/BXJP3CdJezrBFpuPaJjEi2Y7suBQKdEChCAGoR2LF+NH5NJ2TSaCSOyz46MvLY3pyGSVhREoFiBKAWgVgmfNZkk8trMw9SZOOJG/9kDtjIPJKJm1+UANQiEBmDLpiksspxZiCm9GLl3m62NyY+djCvAALFCUAtAu+ZfA9YIenHMolRbNb5Ur1m/xo262QStQLMLFIAahHYqT6n7q0Jxyl+8b9aH6R5Djd+wpEq1LRiBaAWgUgcEu/S70swfrFqb6mkE2zHEwAFAoMTKFoAahGI7cPvrvfCR2rxRZe7Jq8mh0QqLtuRc58CgYURKF4AtpCtqurHJX1I0oclxWvB0AlFIpXZFyP5pu17FxZxOobAiwiMRgBeJARvlPSXkmI3Yfx33yXm72O58qm2QwQoEEiGwOgE4EVCENOEfyTpHydpsuLYsVd2GJU4QiuWJ8cuvUtZttshWZrqlMBoBeBFQhCvAvGxMHYWxn6CX5IUS4t/cfK4HlmIp5X4kn+dpHisv6lejbhO0ma+6k9Dx98XTWD0AvDSAFRV9brJl/kdJtlz31S/IvzEJIX26yezCW+YJNuIcwnjkT4+3j0uKVJqR/KN+Od+2w8sOqD0D4E2BBCANrSoC4HCCCAAhQUUdyDQhgAC0IYWdSFQGAEEoLCA4g4E2hBAANrQoi4ECiOAABQWUNyBQBsCCEAbWtSFQGEEEIDCAoo7EGhDAAFoQ4u6ECiMAAJQWEBxBwJtCCAAbWhRFwKFEUAACgso7kCgDQEEoA0t6kKgMAIIQGEBxR0ItCGAALShRV0IFEYAASgsoLgDgTYEEIA2tKgLgcIIIACFBRR3INCGAALQhhZ1IVAYAQSgsIDiDgTaEEAA2tCiLgQKI/C/LiGrTFMie74AAAAASUVORK5CYII=;fontColor=light-dark(#e1d5e7, #5382ed);" vertex="1" parent="1">
+          <mxGeometry x="210" y="826.87" width="34.25" height="34.25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="610iVGn8CLiIKgVsp3CK" name="Hint_system">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uFI5gnafDdyWLdczLEJh-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-19" y="130" width="401" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uFI5gnafDdyWLdczLEJh-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="357" y="135" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="uFI5gnafDdyWLdczLEJh-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;Fear Quiz- Hint💡&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="170" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="uFI5gnafDdyWLdczLEJh-5" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Hints help you eliminate one wrong answer. However using a hint reduces your final score!&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;i&gt;Example: If you are unsure about &#39;Ophidiophobia&#39;, using the a hint will remove one incorrect option.&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="208" width="379" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="uFI5gnafDdyWLdczLEJh-6" value="Close" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="340" width="150" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OljegTUyzCeV9__yYAdl" name="Statistics ">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-1" value="&lt;font style=&quot;color: rgb(144, 144, 214); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Fear Quiz&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#FFFFFF;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#56517E;strokeColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="-67" y="319" width="383" height="391" as="geometry" />
+        </mxCell>
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#EEEEEE;fontColor=#FFFFFF;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="291" y="324" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fear Quiz - Statistics📊&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="359" width="290" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-5" value="Start!" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#9090D6;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-3" y="617" width="173" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-11" value="&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Rounds played: &lt;b&gt;X&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Total Score:&lt;b&gt; X&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Best Score:&lt;b&gt; X&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Average Score:&lt;b&gt; X&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="440" width="378" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="xqSftQ8lHNaSANhfCMm6-12" value="&lt;font style=&quot;color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;&lt;b&gt;Statistics&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="391" width="77" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
