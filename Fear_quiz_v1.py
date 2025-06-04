@@ -334,7 +334,7 @@ def toggle_theme():
 root = tk.Tk()
 root.title("Fear Quiz 👻")
 root.config(bg="#5a4e8d")
-root.geometry("700x500")
+root.geometry("400x500")
 root.resizable(True, True)
 
 # --- Start Frame ---
@@ -351,7 +351,7 @@ intro_text = ("In this quiz, you'll be shown the name of a phobia\n"
              "Your goal is to get the highest score possible. Ready to test your phobia knowledge?")
 
 tk.Label(start_frame, text=intro_text, font=("Helvetica", 11), fg="white", bg="#5a4e8d", 
-         justify="left", wraplength=600).pack(pady=20)
+         justify="left", wraplength=350).pack(pady=20)
 
 error_label = tk.Label(start_frame, text="", font=("Helvetica", 12), fg="#FF6B6B", bg="#5a4e8d")
 error_label.pack(pady=5)
@@ -392,11 +392,11 @@ theme_button = tk.Button(top_bar, text="☀️ Light Mode", font=("Helvetica", 1
 # Note: We don't pack it here, it will be packed when the quiz starts
 
 question_label = tk.Label(quiz_frame, text="", font=("Helvetica", 16, "bold"), 
-                         fg="white", bg="#5a4e8d", wraplength=600)
+                         fg="white", bg="#5a4e8d", wraplength=350)
 question_label.pack(pady=10)
 
 feedback_label = tk.Label(quiz_frame, text="", font=("Helvetica", 12), 
-                         fg="white", bg="#5a4e8d", wraplength=600)
+                         fg="white", bg="#5a4e8d", wraplength=350)
 feedback_label.pack(pady=5)
 
 # Answer buttons frame
@@ -406,8 +406,8 @@ answer_frame.pack(pady=20)
 answer_buttons = []
 for i in range(4):
     btn = tk.Button(answer_frame, text="", font=("Helvetica", 12, "bold"),
-                   bg="#a89cc8", fg="white", width=25, height=2,
-                   command=lambda i=i: check_answer(i), wraplength=200)
+                   bg="#a89cc8", fg="white", width=15, height=2,
+                   command=lambda i=i: check_answer(i), wraplength=150)
     btn.grid(row=i//2, column=i%2, padx=10, pady=5)
     answer_buttons.append(btn)
 
@@ -442,7 +442,7 @@ end_score_label = tk.Label(end_frame, text="", font=("Helvetica", 18, "bold"),
 end_score_label.pack(pady=10)
 
 end_performance_label = tk.Label(end_frame, text="", font=("Helvetica", 14), 
-                                fg="white", bg="#5a4e8d", wraplength=500)
+                                fg="white", bg="#5a4e8d", wraplength=350)
 end_performance_label.pack(pady=10)
 
 # End game buttons
