@@ -1,49 +1,133 @@
 import tkinter as tk
+from PIL import Image, ImageTk 
+import os 
 from tkinter import ttk, messagebox
 import csv
 import random
 import datetime
 from functools import partial
 
-# --- Data ---
-questions_easy = {
-    "Arachnophobia": "🕷️ Spider",
-    "Acrophobia": "🏔️ Heights", 
-    "Cynophobia": "🐶 Dogs",
-    "Ophidiophobia": "🐍 Snakes",
-    "Trypanophobia": "💉 Needles",
-    "Agoraphobia": "🚪 Open spaces",
-    "Claustrophobia": "📦 Enclosed spaces",
-    "Aviophobia": "✈️ Flying"
-}
+# --- Data Functions ---
+def get_fears():
+    """
+    Retrieves fears from csv file
+    :return: list of fears where each item contains the fear name, fear object, and difficulty
+    """
+    try:
+        file = open("Fear_quiz_assessment/00_fear_list.csv", "r")
+        all_fears = list(csv.reader(file, delimiter=","))
+        file.close()
 
-questions_hard = {
-    "Nomophobia": "📱 Being without a phone",
-    "Atychiphobia": "❌ Failure", 
-    "Taphophobia": "⚰️ Being buried alive",
-    "Chronophobia": "⏰ Time",
-    "Philophobia": "❤️ Love",
-    "Thanatophobia": "💀 Death",
-    "Ergophobia": "💼 Work",
-    "Hippopotomonstrosesquippedaliophobia": "📚 Long words"
-}
+        # remove the first row (header)
+        all_fears.pop(0)
 
-# Generate options for each phobia
-def generate_options(correct_answer, all_questions):
-    options = [correct_answer]
-    other_answers = [ans for ans in all_questions.values() if ans != correct_answer]
-    options.extend(random.sample(other_answers, min(3, len(other_answers))))
+        return all_fears
+    except FileNotFoundError:
+        # Fallback data if file not found
+        print("Warning: fear_list.csv not found. Using default fear data.")
+        return [
+            ["Arachnophobia", "🕷️ Spider", "Easy"],
+            ["Acrophobia", "🏔️ Heights", "Easy"],
+            ["Cynophobia", "🐶 Dogs", "Easy"],
+            ["Ophidiophobia", "🐍 Snakes", "Easy"],
+            ["Trypanophobia", "💉 Needles", "Easy"],
+            ["Agoraphobia", "🚪 Open spaces", "Easy"],
+            ["Claustrophobia", "📦 Enclosed spaces", "Easy"],
+            ["Aviophobia", "✈️ Flying", "Easy"],
+            ["Nomophobia", "📱 Being without a phone", "Hard"],
+            ["Atychiphobia", "❌ Failure", "Hard"],
+            ["Taphophobia", "⚰️ Being buried alive", "Hard"],
+            ["Chronophobia", "⏰ Time", "Hard"],
+            ["Philophobia", "❤️ Love", "Hard"],
+            ["Thanatophobia", "💀 Death", "Hard"],
+            ["Ergophobia", "💼 Work", "Hard"],
+            ["Hippopotomonstrosesquippedaliophobia", "📚 Long words", "Hard"]
+        ]
+
+def get_round_fears(difficulty):
+    """
+    Choose four fears based on the selected difficulty level
+    :return: list of fears for the round
+    """
+    all_fears_list = get_fears()
     
-    # Pad with generic options if needed
-    generic_options = ["🌊 Water", "🔥 Fire", "⚡ Thunder", "🦇 Bats", "🐱 Cats", "🧼 Soap"]
-    while len(options) < 4:
-        generic = random.choice(generic_options)
-        if generic not in options:
-            options.append(generic)
+    # Filter fears by difficulty
+    difficulty_fears = [fear for fear in all_fears_list if fear[2].lower() == difficulty.lower()]
     
-    return options[:4]
+    # If not enough fears of the chosen difficulty, use all fears
+    if len(difficulty_fears) < 4:
+        difficulty_fears = all_fears_list
+    
+    round_fears = []
+    fear_names = []
+    
+    # Select 4 unique fears
+    while len(round_fears) < 4 and difficulty_fears:
+        potential_fear = random.choice(difficulty_fears)
+        
+        # Check if we've already used this fear
+        if potential_fear[0] not in fear_names:
+            round_fears.append(potential_fear)
+            fear_names.append(potential_fear[0])
+            difficulty_fears.remove(potential_fear)
+    
+    return round_fears
+
+def load_fear_images():
+    """
+    Loads images for fears from a directory
+    :return: dictionary of fear objects mapped to their image objects
+    """
+    fear_images = {}
+    image_dir = "Fear_quiz_assessment\Images"  
+    
+    try:
+        if os.path.exists(image_dir):
+            for filename in os.listdir(image_dir):
+                # Check if file is an image
+                if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+                    # Get base name without extension 
+                    base_name = os.path.splitext(filename)[0].lower()
+                    
+                    # Load the image
+                    image_path = os.path.join(image_dir, filename)
+                    photo_img = tk.PhotoImage(file=image_path)
+                    
+                    # Store in dictionary with fear object as key
+                    fear_images[base_name] = photo_img
+        else:
+            print(f"Warning: Directory {image_dir} not found.")
+            
+        return fear_images
+    
+    except Exception as e:
+        print(f"Error loading images: {e}")
+        return {}
+
+def get_image_for_fear(fear_text, fear_images):
+    """
+    Find the appropriate image for a fear based on its text
+    :param fear_text: Text description of the fear (e.g., "🕷️ Spider")
+    :param fear_images: Dictionary of fear objects mapped to their images
+    :return: Image object or None if no matching image
+    """
+    # Extract just the object part (e.g., "Spider" from "🕷️ Spider")
+    object_text = fear_text.split()[-1] if ' ' in fear_text else fear_text
+    object_text = object_text.lower()
+    
+    # Try to find exact match
+    if object_text in fear_images:
+        return fear_images[object_text]
+    
+    # Try to find partial match
+    for fear_obj, img in fear_images.items():
+        if fear_obj in object_text or object_text in fear_obj:
+            return img
+    
+    return None
 
 # --- Global Variables ---
+fear_images = {}  
 current_theme = "dark"  # Default theme
 score = 0
 hints_used = 0
@@ -56,6 +140,12 @@ current_correct_answer = ""
 round_number = 0
 
 # --- Functions ---
+def start_quiz():
+       global total_questions, level, score, asked_questions, hints_used, stats_list, round_number, fear_images
+       
+       # Load images at the start of the quiz
+       fear_images = load_fear_images()
+       
 def start_quiz():
     global total_questions, level, score, asked_questions, hints_used, stats_list, round_number
     try:
@@ -87,17 +177,27 @@ def next_question():
     # Show theme toggle button during quiz
     theme_button.pack(side="right", padx=5)
 
-    question_pool = questions_easy if level == "Easy" else questions_hard
-    remaining_questions = list(set(question_pool.keys()) - set(asked_questions))
-
-    if not remaining_questions or len(asked_questions) >= total_questions:
+    # Get fears for this round based on difficulty
+    round_fear_list = get_round_fears(level)
+    
+    # Check if we've run out of questions or reached our limit
+    if not round_fear_list or round_number >= total_questions:
         end_game()
         return
 
     round_number += 1
-    current_question = random.choice(remaining_questions)
+    
+    # Select a fear that hasn't been asked yet
+    unused_fears = [f for f in round_fear_list if f[0] not in asked_questions]
+    if unused_fears:
+        selected_fear = random.choice(unused_fears)
+    else:
+        selected_fear = random.choice(round_fear_list)
+    
+    current_question = selected_fear[0]  # Fear name (e.g., "Arachnophobia")
+    current_correct_answer = selected_fear[1]  # Fear object (e.g., "🕷️ Spider")
+    
     asked_questions.append(current_question)
-    current_correct_answer = question_pool[current_question]
 
     question_label.config(text=f"What is {current_question}?")
     round_label.config(text=f"Round {round_number} of {total_questions}")
@@ -107,16 +207,41 @@ def next_question():
     for btn in answer_buttons:
         btn.config(state="normal", bg="#a89cc8", fg="white")
 
-    # Generate and shuffle options
-    options = generate_options(current_correct_answer, question_pool)
-    random.shuffle(options)
+    # Generate options including the correct answer
+    options = [f[1] for f in round_fear_list]  # All fear objects from round_fear_list
     
-    for i in range(4):
+    # If we need more options, add generic ones
+    generic_options = ["🌊 Water", "🔥 Fire", "⚡ Thunder", "🦇 Bats", "🐱 Cats", "🧼 Soap"]
+    while len(options) < 4:
+        generic = random.choice(generic_options)
+        if generic not in options:
+            options.append(generic)
+    
+    # Shuffle and set button texts
+    random.shuffle(options)
+    for i in range(min(4, len(options))):
         answer_buttons[i].config(text=options[i])
     
     # Reset hint button
     hint_button.config(state="normal", text="💡 Hint")
     next_button.config(state="disabled")
+
+# When setting button text, also set the image:
+    for i in range(min(4, len(options))):
+           fear_text = options[i]
+           answer_buttons[i].config(text=fear_text)
+           
+           # Try to add image to button
+           img = get_image_for_fear(fear_text, fear_images)
+           if img:
+               answer_buttons[i].config(image=img, compound="left")
+               # Keep a reference to prevent garbage collection
+               answer_buttons[i].image = img
+
+btn = tk.Button(answer_frame, text="", font=("Helvetica", 12, "bold"),
+                bg="#a89cc8", fg="white", width=15, height=2,
+                command=lambda i=i: check_answer(i), wraplength=150,
+                compound="left")  # Add this parameter
 
 def check_answer(selected_index):
     global score
@@ -421,7 +546,7 @@ control_row1 = tk.Frame(control_frame, bg="#5a4e8d")
 control_row1.pack(pady=2)
 
 hint_button = tk.Button(control_row1, text="💡 Hint", font=("Helvetica", 12, "bold"),
-                       bg="#FFF651", fg="white", command=use_hint)
+                       bg="#F8EC06", fg="white", command=use_hint)
 hint_button.pack(side="left", padx=5)
 
 next_button = tk.Button(control_row1, text="➡️ Next", font=("Helvetica", 12, "bold"),
@@ -459,19 +584,22 @@ end_buttons_frame = tk.Frame(end_frame, bg="#5a4e8d")
 end_buttons_frame.pack(pady=10)  # Reduced padding
 
 # Create a grid layout for end buttons (2x2)
+# Stats button
 stats_btn = tk.Button(end_buttons_frame, text="📊 View Stats", font=("Helvetica", 14, "bold"), 
                      bg="#E67E22", fg="white", command=show_detailed_stats, padx=10, pady=5)
 stats_btn.grid(row=0, column=0, padx=5, pady=5)
 
+# File export file
 export_btn = tk.Button(end_buttons_frame, text="💾 Export Results", font=("Helvetica", 14, "bold"), 
                       bg="#3498DB", fg="white", command=export_stats, padx=10, pady=5)
 export_btn.grid(row=0, column=1, padx=5, pady=5)
 
+# Play again button
 play_again_btn = tk.Button(end_buttons_frame, text="🔄 Play Again", font=("Helvetica", 14, "bold"), 
                           bg="#2ECC71", fg="white", command=restart_quiz, padx=10, pady=5)
 play_again_btn.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
 
-# Add Quit button next to Play Again
+# Quit button
 quit_btn = tk.Button(end_buttons_frame, text="🚪 Quit", font=("Helvetica", 14, "bold"), 
                     bg="#B51F0E", fg="white", command=root.destroy, padx=10, pady=5)
 quit_btn.grid(row=1, column=1, padx=5, pady=5)
