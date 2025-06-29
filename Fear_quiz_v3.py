@@ -366,7 +366,6 @@ def restart_quiz():
     
     # Reset entry field
     num_questions_entry.delete(0, tk.END)
-    num_questions_entry.insert(0)
     level_dropdown.set("Easy")
     error_label.config(text="")
 
@@ -381,9 +380,11 @@ def toggle_theme():
         quiz_frame.config(bg="#F5F5F5")
         question_label.config(bg="#F5F5F5", fg="#333333")
         round_label.config(bg="#F5F5F5", fg="#5A4E8D")
-        feedback_label.config(bg="#5A4E8D")
+        feedback_label.config(bg="#F5F5F5", fg="#333333")
         answer_frame.config(bg="#F5F5F5")
         control_frame.config(bg="#F5F5F5")
+        control_row1.config(bg="#F5F5F5")
+        control_row2.config(bg="#F5F5F5")
         top_bar.config(bg="#F5F5F5")
         theme_button.config(text="🌙 Dark Mode")
 
@@ -395,9 +396,11 @@ def toggle_theme():
         quiz_frame.config(bg="#5a4e8d")
         question_label.config(bg="#5a4e8d", fg="#F1F1F1")
         round_label.config(bg="#5a4e8d", fg="lavender")
-        feedback_label.config(bg="#5a4e8d")
+        feedback_label.config(bg="#5a4e8d", fg="white")
         answer_frame.config(bg="#5a4e8d")
         control_frame.config(bg="#5a4e8d")
+        control_row1.config(bg="#5a4e8d")
+        control_row2.config(bg="#5a4e8d")
         top_bar.config(bg="#5a4e8d")
         theme_button.config(text="☀️ Light Mode")
 
