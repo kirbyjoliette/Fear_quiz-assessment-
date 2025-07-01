@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 import csv
 import random
 import datetime
-from functools import partial
+
 
 # --- Data Functions ---
 def get_fears():
@@ -21,7 +21,7 @@ def get_fears():
 
         return all_fears
     except FileNotFoundError:
-        # Fallback data if file not found
+        # If the file doesn't exist, use this fallback data
         print("Warning: fear_list.csv not found. Using default fear data.")
         return [
             ["Arachnophobia", "🕷️ Spider", "Easy"],
@@ -72,7 +72,8 @@ def get_round_fears(difficulty):
     return round_fears
 
 # --- Global Variables ---
-current_theme = "dark"  # Default theme
+# Default theme
+current_theme = "dark"  
 score = 0
 hints_used = 0
 hints_used_this_question = 0
@@ -85,36 +86,49 @@ current_correct_answer = ""
 round_number = 0
 round_fear_list = []
 
-# --- Functions ---
+# ---Main Quiz Functions ---
 def start_quiz():
+    """
+    Validates user input, resets stats, and starts the quiz.
+    Hides the start screen and shows the quiz screen.
+    """
     global total_questions, level, score, asked_questions, hints_used, stats_list, round_number
     try:
         total_questions = int(num_questions_entry.get())
         if total_questions <= 0:
             raise ValueError
     except ValueError:
+        # Show error if not a positive integer
         error_label.config(text="⚠️ Oops - Please choose a whole number more than zero", fg="#FF6B6B")
         return
 
     level = level_dropdown.get()
     if level not in ["Easy", "Hard"]:
+        # Show error if level is not selected
         error_label.config(text="⚠️ Please choose a level", fg="#FF6B6B")
         return
 
+    # Rest all stats and tracking variables
     score = 0
     hints_used = 0
     asked_questions = []
     stats_list = []
     round_number = 0
 
+    # Hide the start frame and show the quiz frame
     start_frame.pack_forget()
     quiz_frame.pack(fill="both", expand=True)
     next_question()
 
 def next_question():
+    """
+    Sets up and displays the next quiz question.
+    If the quiz is finished moves to the end screen.
+    """
     global current_question, current_correct_answer, round_number, round_fear_list
     
     global hints_used_this_question
+    # Rest hints for this question
     hints_used_this_question = 0
 
     # Show theme toggle button during quiz
@@ -137,11 +151,12 @@ def next_question():
     else:
         selected_fear = random.choice(round_fear_list)
     
-    current_question = selected_fear[0]  # Fear name (e.g., "Arachnophobia")
-    current_correct_answer = selected_fear[1]  # Fear object (e.g., "🕷️ Spider")
+    current_question = selected_fear[0]  # Fear name
+    current_correct_answer = selected_fear[1]  # Fear object 
     
     asked_questions.append(current_question)
 
+    # Update the question and round labels
     question_label.config(text=f"What is {current_question}?")
     round_label.config(text=f"Round {round_number} of {total_questions}")
     feedback_label.config(text="Choose your answer below! 🎯", fg="white")
@@ -170,6 +185,10 @@ def next_question():
     next_button.config(state="disabled")
 
 def check_answer(selected_index):
+    """
+    Checks if the user's selected answer is correct
+    Updates score, feedback, and records stats for this question
+    """
     global score
     selected_answer = answer_buttons[selected_index].cget("text")
     
@@ -216,6 +235,10 @@ def check_answer(selected_index):
     stats_button.config(state="normal")
 
 def use_hint():
+    """
+    Removes one wrong answer from the options.
+    Only one hint can be used per question.
+    """
     global hints_used, score, hints_used_this_question, level
 
     # Set max hints allowed per question based on difficulty
@@ -248,12 +271,18 @@ def use_hint():
     feedback_label.config(text="💡 Hint used! One wrong answer eliminated.", fg="#FFF651")
 
 def end_game():
+    """
+    Shows the end game screen with the user's score and stats.
+    Calculates success rate, determines a performance message,
+    and displays results in a message box and on the end frame
+    """
     global score
     quiz_frame.pack_forget()
     
+     # Calculate the percentage of correct answers
     success_rate = (sum(1 for stat in stats_list if stat["Result"] == "Correct") / len(stats_list) * 100) if stats_list else 0
     
-    # Determine performance message
+    # Choose a message and color based on performance
     if success_rate >= 80:
         performance_msg = "🏆 Excellent! You're a phobia expert!"
         performance_color = "#FFD700"
@@ -274,6 +303,7 @@ def end_game():
                   f"Hints Used: {hints_used}\n\n"
                   f"{performance_msg}")
     
+     # Show a pop up with the results
     messagebox.showinfo("Quiz Is Over", result_text)
     
     # Show end game frame
@@ -282,6 +312,10 @@ def end_game():
     end_performance_label.config(text=performance_msg, fg=performance_color)
 
 def show_detailed_stats():
+    """
+    Opens a new window showing detailed statistics for each question.
+    Includes a scrollable area for all rounds.
+    """
     if not stats_list:
         messagebox.showinfo("Stats", "No game data available yet!")
         return
@@ -291,11 +325,12 @@ def show_detailed_stats():
     stats_window.config(bg="#5a4e8d")
     stats_window.geometry("500x400")  
     
-    # Create scrollable frame
+    # Create a scrollable frame for stats
     canvas = tk.Canvas(stats_window, bg="#5a4e8d")
     scrollbar = ttk.Scrollbar(stats_window, orient="vertical", command=canvas.yview)
     scrollable_frame = tk.Frame(canvas, bg="#5a4e8d")
     
+    # Configure scrolling
     scrollable_frame.bind(
         "<Configure>",
         lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
@@ -304,6 +339,7 @@ def show_detailed_stats():
     canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
     canvas.configure(yscrollcommand=scrollbar.set)
 
+    # Allow mouse wheel scrolling 
     def _on_mousewheel(event):
         canvas.yview_scroll(int(-1*(event.delta/120)), "units")
     canvas.bind_all("<MouseWheel>", _on_mousewheel)  # For Windows and Mac
@@ -340,15 +376,19 @@ def show_detailed_stats():
         
         tk.Label(question_frame, text=question_text, font=("Helvetica", 10), 
                 bg=color, fg="white", justify="left", wraplength=400).pack(pady=10, padx=10)
-    
+    # Pack the canvas and scrollbar to make the window scrollable
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
 def export_stats():
+    """
+    Saves the quiz statistics to a CSV file.
+    Filename includes the current date and time.
+    """
     if not stats_list:
         messagebox.showinfo("Export", "No quiz data to export yet!")
         return
-        
+    # Generate a filename based on date/time
     filename = f"fear_quiz_stats_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     try:
         with open(filename, "w", newline='') as f:
@@ -361,6 +401,9 @@ def export_stats():
         messagebox.showerror("Export Error", f"Failed to export stats: {str(e)}")
 
 def restart_quiz():
+    """
+    Returns the user to the start screen and resets all entry fields.
+    """
     end_frame.pack_forget()
     start_frame.pack(fill="both", expand=True)
     
@@ -370,7 +413,10 @@ def restart_quiz():
     error_label.config(text="")
 
 def toggle_theme():
-    """Toggle between light and dark themes"""
+    """
+    Toggle between light and dark themes for the quiz interface.
+    Changes the background and text colors for all relevant widgets.
+    """
     global current_theme
     
     if current_theme == "dark":
@@ -415,6 +461,7 @@ root.resizable(True, True)
 start_frame = tk.Frame(root, bg="#5a4e8d")
 start_frame.pack(fill="both", expand=True)
 
+# Quiz title
 tk.Label(start_frame, text="Fear Quiz 👾", font=("Helvetica", 28, "bold"), 
          fg="lavender", bg="#5a4e8d").pack(pady=10)  
 
@@ -550,6 +597,6 @@ quit_btn = tk.Button(end_buttons_frame, text="🚪 Quit", width=14, font=("Helve
                     bg="#B51F0E", fg="white", command=root.destroy)
 quit_btn.grid(row=1, column=1, padx=5, pady=5)
 
-# Start the application
+# Start the main loop
 if __name__ == "__main__":
     root.mainloop()
